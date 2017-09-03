@@ -1,0 +1,58 @@
+{
+    "name": "perez-e-velho",
+    "version": "0.1.0",
+    "description": "Site de Escritótio de advocácia",
+    "author": "Vila Mota <vilamotasoft@gmail.com>",
+    "license": "BSD",
+    "homepage": "https://github.com/vilamotasoft/perez-e-velho",
+    "directories": {
+      "test": "test"
+    },
+    "scripts": {
+      "clean": "node ./node_modules/gulp/bin/gulp.js clean",
+      "test": "node ./node_modules/gulp/bin/gulp.js test",
+      "build": "node ./node_modules/gulp/bin/gulp.js build",
+      "dev": "node ./node_modules/gulp/bin/gulp.js dev",
+      "start": "node ./node_modules/gulp/bin/gulp.js test && node ./node_modules/gulp/bin/gulp.js dev"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/vilamotasoft/perez-e-velho.git"
+    },
+    "bugs": {
+      "url": "https://github.com/vilamotasoft/perez-e-velho/issues"
+    },
+    "engines": {
+      "node": "6.11.0",
+      "npm": "5.4.0"
+    },
+    "devDependencies": {
+      "del": "^2.2.2",
+      "gulp": "^3.9.1",
+      "gulp-angular-templatecache": "^2.0.0",
+      "gulp-concat": "^2.6.1",
+      "gulp-connect": "^5.0.0",
+      "gulp-eslint": "^2.0.0",
+      "gulp-flatten": "^0.3.1",
+      "gulp-jasmine": "^2.4.2",
+      "gulp-minify-css": "^1.2.4",
+      "gulp-minify-html": "^1.0.6",
+      "gulp-ng-annotate": "^2.0.0",
+      "gulp-rename": "^1.2.2",
+      "gulp-sourcemaps": "^2.4.1",
+      "gulp-uglify": "^2.1.0",
+      "gulp-util": "^3.0.8"
+    },
+    "dependencies": {
+      "angular": "^1.6.6",
+      "angular-animate": "^1.6.6",
+      "angular-aria": "^1.6.6",
+      "angular-i18n": "^1.6.6",
+      "angular-base64": "^2.0.5",
+      "angular-material": "^1.1.4",
+      "angular-messages": "^1.6.6",
+      "angular-route": "^1.6.6"
+    },
+    "main": "server.js"
+  }
+  
