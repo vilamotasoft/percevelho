@@ -3,34 +3,17 @@
 
     // Injeção de Dependência
     angular.module('perezVelho', [
-        'ngMaterial',
-        'ngAnimate',
-        'ngMessages',
         'ngRoute'
     ]);
 
     angular.module('perezVelho').config(perezVelhoConfig);
-    perezVelhoConfig.$inject  = [ '$mdThemingProvider', '$routeProvider', '$locationProvider' ];
+    perezVelhoConfig.$inject  = [ '$routeProvider', '$locationProvider' ];
 
     angular.module('perezVelho').run(perezVelhoRun);
     perezVelhoRun.$inject     = [ ];
 
     // Config method
-    function perezVelhoConfig($mdThemingProvider, $routeProvider, $locationProvider) {
-
-        $mdThemingProvider
-            .theme('default')
-            .primaryPalette('pink', {
-                'default': '400',
-                'hue-1': '100',
-                'hue-2': '600',
-                'hue-3': 'A100'
-            })
-            // If you specify less than all of the keys, it will inherit from the
-            // default shades
-            .accentPalette('purple', {
-                'default': '200'
-            }).dark();
+    function perezVelhoConfig($routeProvider, $locationProvider) {
 
         $routeProvider
             .when('/', {

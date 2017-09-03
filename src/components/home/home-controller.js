@@ -6,8 +6,7 @@
 
     // injecting dependencies
     HomeController.$inject = [
-        '$scope',
-        '$mdSidenav'
+        '$scope'
     ];
 
     // Main Controller
