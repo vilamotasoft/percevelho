@@ -1,5 +1,5 @@
 .demo-layout-transparent {
-  background: url('/dist/assets/img/capa_index.jpg') center / cover;
+  background-color: darkolivegreen;
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
