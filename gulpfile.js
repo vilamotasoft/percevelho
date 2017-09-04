@@ -16,7 +16,7 @@ del             = require('del'),
 eslint_conf     = require('./.eslintrc'),
 APP_PREFIX      = 'perez-velho',
 FOLDERS_TO_CLEAN= './dist/**/',
-ASSETS_ARRAY    = ['assets/**/img/**/*', 'assets/**/icons/*', 'assets/**/js/*/*', 'assets/**/css/*/*'],
+ASSETS_ARRAY    = ['src/**/img/**/*', 'src/**/icons/*', 'src/**/js/*/*', 'src/**/css/*/*'],
 SRC_CODE        = [
     './src/app.module.js',
     './src/**/*.js'
