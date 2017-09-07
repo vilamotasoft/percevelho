@@ -12,6 +12,7 @@ const
     minifyHTML      = require('gulp-minify-html'),
     templateCache   = require('gulp-angular-templatecache'),
     flatten         = require('gulp-flatten'),
+    livereload      = require('gulp-livereload'),
     del             = require('del'),
     eslint_conf     = require('./.eslintrc'),
     APP_PREFIX      = 'vila-mota',
@@ -23,7 +24,6 @@ const
     ],
     CONNECT_SERVER  = {
         'port'       : 3000,
-        'livereload' : true,
         'fallback'   : 'index.html'
     },
     BUNDLE_CODE     = SRC_CODE.concat('./build/templatecache/app.templates.js');
@@ -100,6 +100,7 @@ gulp.task('connect', ['build'], function () {
 });
 
 gulp.task('watch', function () {
+    livereload.listen();
     gulp.watch(['./src/**' ], [ 'reload' ]);
 });
 
