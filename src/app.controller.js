@@ -2,7 +2,7 @@
     'use strict';
 
     // registering on angular
-    angular.module('perezVelho').controller('MainController', MainController);
+    angular.module('vilaMota').controller('MainController', MainController);
 
     // injecting dependencies
     MainController.$inject = [

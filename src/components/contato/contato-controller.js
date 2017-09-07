@@ -2,15 +2,15 @@
     'use strict';
 
     // registering on angular
-    angular.module('vilaMota').controller('homeController', HomeController);
+    angular.module('vilaMota').controller('contatoController', ContatoController);
 
     // injecting dependencies
-    HomeController.$inject = [
+    ContatoController.$inject = [
         '$scope'
     ];
 
     // Main Controller
-    function HomeController($scope, $mdSidenav) {
+    function ContatoController($scope, $mdSidenav) {
         var list = [],
             i;
 
