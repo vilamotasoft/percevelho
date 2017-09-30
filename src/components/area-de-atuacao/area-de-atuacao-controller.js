@@ -2,7 +2,7 @@
     'use strict';
 
     // registering on angular
-    angular.module('vilaMota').controller('homeController', AreaDeAtuacaoController);
+    angular.module('vilaMota').controller('areaDeAtuacaoController', AreaDeAtuacaoController);
 
     // injecting dependencies
     AreaDeAtuacaoController.$inject = [
